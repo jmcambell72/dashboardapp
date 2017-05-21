@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Pull in Bootstrap, w3.js, jquery -->
+
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<style>
+
+.marked {
+    background-color: orange;
+    font-size: 30px;
+    color: white;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HOME</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="buttons.html">Extra Buttons</a></li>
+      <li><a href="chart.html">Dashboard Charts</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<div class="panel panel-default">
+  <br>
+  <button onclick="w3.toggleShow('.container_table')">Toggle Hide/Show</button>
+
+</div>
+
+<div class="container_table">
+    
+  <h3>Table</h3>
+
+  <div class="row">
+  <div class="col-md-4">Col1
+  	<h3> Test </h3>
+  </div>
+  <div class="col-md-4">Col2
+  	<h3> Test </h3>
+  </div>
+  <div class="col-md-4">Col3
+  	<h3> Test </h3>
+  </div>
+</div>
+  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+
+	<h2>What Can JavaScript Do?</h2>
+
+	<p id="demo">JavaScript can change HTML content.</p>
+
+	<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+</div>
+
+</body>
+
+<div class="extra_buttons">
+
+<button onclick="w3.hide('.container')">Hide</button>
+
+<button onclick="w3.show('.container')">Show</button>
+
+
+
+<button onclick="w3.addStyle('.container','background-color','red')">Add Style</button>
+
+<button onclick="w3.addClass('.container','marked')">Add Class</button>
+
+</div>
+
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p> 
+</div>
+
+<h2>Filter List</h2>
+
+<p>Search for a name in the input field:</p>
+
+<input oninput="w3.filterHTML('#id01', 'li', this.value)" placeholder="Search for names..">
+
+<ul id="id01">
+  <li>Alfreds Futterkiste</li>
+  <li>Berglunds snabbköp</li>
+  <li>Centro comercial Moctezuma</li>
+  <li>Ernst Handel</li>
+  <li>FISSA Fabrica Inter. Salchichas S.A.</li>
+  <li>Galería del gastrónomo</li>
+  <li>Island Trading</li>
+  <li>Königlich Essen</li>
+  <li>Laughing Bacchus Wine Cellars</li>
+  <li>Magazzini Alimentari Riuniti</li>
+  <li>North/South</li>
+  <li>Paris spécialités</li>
+  <li>Rattlesnake Canyon Grocery</li>
+  <li>Simons bistro</li>
+  <li>The Big Cheese</li>
+  <li>Vaffeljernet</li>
+  <li>Wolski Zajazd</li>
+</ul>
+
+</body>
+</html>
